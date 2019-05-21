@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v2.2": {
       "TestCollection.IoC/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Http": "2.2.2"
+          "Microsoft.AspNetCore.Http": "2.2.2",
+          "TestCollection.Business": "1.0.0"
         },
         "runtime": {
           "TestCollection.IoC.dll": {}
@@ -135,6 +136,19 @@
             "fileVersion": "4.6.26515.6"
           }
         }
+      },
+      "TestCollection.Business/1.0.0": {
+        "dependencies": {
+          "TestCollection.Util": "1.0.0"
+        },
+        "runtime": {
+          "TestCollection.Business.dll": {}
+        }
+      },
+      "TestCollection.Util/1.0.0": {
+        "runtime": {
+          "TestCollection.Util.dll": {}
+        }
       }
     }
   },
@@ -241,6 +255,16 @@
       "sha512": "sha512-Xg4G4Indi4dqP1iuAiMSwpiWS54ZghzR644OtsRCm/m/lBMG8dUBhLVN7hLm8NNrNTR+iGbshCPTwrvxZPlm4g==",
       "path": "system.text.encodings.web/4.5.0",
       "hashPath": "system.text.encodings.web.4.5.0.nupkg.sha512"
+    },
+    "TestCollection.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TestCollection.Util/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

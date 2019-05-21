@@ -15,3 +15,7 @@ D:\Estudos\Projetos\TestCollection\TestCollection.API\bin\Debug\netcoreapp2.2\Te
 D:\Estudos\Projetos\TestCollection\TestCollection.API\obj\Debug\netcoreapp2.2\TestCollection.API.csproj.CopyComplete
 D:\Estudos\Projetos\TestCollection\TestCollection.API\obj\Debug\netcoreapp2.2\TestCollection.API.dll
 D:\Estudos\Projetos\TestCollection\TestCollection.API\obj\Debug\netcoreapp2.2\TestCollection.API.pdb
+D:\Estudos\Projetos\TestCollection\TestCollection.API\bin\Debug\netcoreapp2.2\TestCollection.Business.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.API\bin\Debug\netcoreapp2.2\TestCollection.Util.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.API\bin\Debug\netcoreapp2.2\TestCollection.Business.pdb
+D:\Estudos\Projetos\TestCollection\TestCollection.API\bin\Debug\netcoreapp2.2\TestCollection.Util.pdb

@@ -30,6 +30,7 @@
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.4.10",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3",
           "Swashbuckle.AspNetCore": "4.0.1",
+          "TestCollection.Business": "1.0.0",
           "TestCollection.IoC": "1.0.0"
         },
         "runtime": {
@@ -429,15 +430,35 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
+      "TestCollection.Business/1.0.0": {
+        "dependencies": {
+          "TestCollection.Util": "1.0.0"
+        },
+        "runtime": {
+          "TestCollection.Business.dll": {}
+        },
+        "compile": {
+          "TestCollection.Business.dll": {}
+        }
+      },
       "TestCollection.IoC/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Http": "2.2.2"
+          "Microsoft.AspNetCore.Http": "2.2.2",
+          "TestCollection.Business": "1.0.0"
         },
         "runtime": {
           "TestCollection.IoC.dll": {}
         },
         "compile": {
           "TestCollection.IoC.dll": {}
+        }
+      },
+      "TestCollection.Util/1.0.0": {
+        "runtime": {
+          "TestCollection.Util.dll": {}
+        },
+        "compile": {
+          "TestCollection.Util.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3797,7 +3818,17 @@
       "path": "system.linq.parallel/4.3.0",
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
     },
+    "TestCollection.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "TestCollection.IoC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TestCollection.Util/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

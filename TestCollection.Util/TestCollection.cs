@@ -146,6 +146,7 @@ namespace TestCollection.Util
                     index += lst.Count;
                 }
             }
+            //retorna -1 quando não há item correspondente.
             return -1;
         }
     }

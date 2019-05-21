@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "TestCollection.Business/1.0.0": {
+        "dependencies": {
+          "TestCollection.Util": "1.0.0"
+        },
+        "runtime": {
+          "TestCollection.Business.dll": {}
+        }
+      },
+      "TestCollection.Util/1.0.0": {
+        "runtime": {
+          "TestCollection.Util.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TestCollection.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TestCollection.Util/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,8 @@
+D:\Estudos\Projetos\TestCollection\TestCollection.Util\bin\Debug\netcoreapp2.2\TestCollection.Util.deps.json
+D:\Estudos\Projetos\TestCollection\TestCollection.Util\bin\Debug\netcoreapp2.2\TestCollection.Util.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.Util\bin\Debug\netcoreapp2.2\TestCollection.Util.pdb
+D:\Estudos\Projetos\TestCollection\TestCollection.Util\obj\Debug\netcoreapp2.2\TestCollection.Util.csproj.CoreCompileInputs.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.Util\obj\Debug\netcoreapp2.2\TestCollection.Util.AssemblyInfoInputs.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.Util\obj\Debug\netcoreapp2.2\TestCollection.Util.AssemblyInfo.cs
+D:\Estudos\Projetos\TestCollection\TestCollection.Util\obj\Debug\netcoreapp2.2\TestCollection.Util.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.Util\obj\Debug\netcoreapp2.2\TestCollection.Util.pdb

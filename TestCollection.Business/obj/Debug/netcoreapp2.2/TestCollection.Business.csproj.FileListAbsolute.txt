@@ -1,0 +1,12 @@
+D:\Estudos\Projetos\TestCollection\TestCollection.Business\bin\Debug\netcoreapp2.2\TestCollection.Business.deps.json
+D:\Estudos\Projetos\TestCollection\TestCollection.Business\bin\Debug\netcoreapp2.2\TestCollection.Business.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.Business\bin\Debug\netcoreapp2.2\TestCollection.Business.pdb
+D:\Estudos\Projetos\TestCollection\TestCollection.Business\bin\Debug\netcoreapp2.2\TestCollection.Util.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.Business\bin\Debug\netcoreapp2.2\TestCollection.Util.pdb
+D:\Estudos\Projetos\TestCollection\TestCollection.Business\obj\Debug\netcoreapp2.2\TestCollection.Business.csprojAssemblyReference.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.Business\obj\Debug\netcoreapp2.2\TestCollection.Business.csproj.CoreCompileInputs.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.Business\obj\Debug\netcoreapp2.2\TestCollection.Business.AssemblyInfoInputs.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.Business\obj\Debug\netcoreapp2.2\TestCollection.Business.AssemblyInfo.cs
+D:\Estudos\Projetos\TestCollection\TestCollection.Business\obj\Debug\netcoreapp2.2\TestCollection.Business.csproj.CopyComplete
+D:\Estudos\Projetos\TestCollection\TestCollection.Business\obj\Debug\netcoreapp2.2\TestCollection.Business.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.Business\obj\Debug\netcoreapp2.2\TestCollection.Business.pdb
