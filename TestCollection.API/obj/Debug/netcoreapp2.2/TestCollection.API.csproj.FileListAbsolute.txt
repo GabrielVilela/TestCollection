@@ -1,0 +1,17 @@
+D:\Estudos\Projetos\TestCollection\TestCollection.API\obj\Debug\netcoreapp2.2\TestCollection.API.csproj.CoreCompileInputs.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.API\obj\Debug\netcoreapp2.2\TestCollection.API.AssemblyInfoInputs.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.API\obj\Debug\netcoreapp2.2\TestCollection.API.AssemblyInfo.cs
+D:\Estudos\Projetos\TestCollection\TestCollection.API\bin\Debug\netcoreapp2.2\TestCollection.IoC.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.API\obj\Debug\netcoreapp2.2\TestCollection.API.csprojAssemblyReference.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.API\obj\Debug\netcoreapp2.2\TestCollection.API.RazorAssemblyInfo.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.API\obj\Debug\netcoreapp2.2\TestCollection.API.RazorAssemblyInfo.cs
+D:\Estudos\Projetos\TestCollection\TestCollection.API\obj\Debug\netcoreapp2.2\TestCollection.API.RazorTargetAssemblyInfo.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.API\bin\Debug\netcoreapp2.2\TestCollection.API.deps.json
+D:\Estudos\Projetos\TestCollection\TestCollection.API\bin\Debug\netcoreapp2.2\TestCollection.API.runtimeconfig.json
+D:\Estudos\Projetos\TestCollection\TestCollection.API\bin\Debug\netcoreapp2.2\TestCollection.API.runtimeconfig.dev.json
+D:\Estudos\Projetos\TestCollection\TestCollection.API\bin\Debug\netcoreapp2.2\TestCollection.API.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.API\bin\Debug\netcoreapp2.2\TestCollection.API.pdb
+D:\Estudos\Projetos\TestCollection\TestCollection.API\bin\Debug\netcoreapp2.2\TestCollection.IoC.pdb
+D:\Estudos\Projetos\TestCollection\TestCollection.API\obj\Debug\netcoreapp2.2\TestCollection.API.csproj.CopyComplete
+D:\Estudos\Projetos\TestCollection\TestCollection.API\obj\Debug\netcoreapp2.2\TestCollection.API.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.API\obj\Debug\netcoreapp2.2\TestCollection.API.pdb

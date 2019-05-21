@@ -1,0 +1,9 @@
+D:\Estudos\Projetos\TestCollection\TestCollection.IoC\bin\Debug\netcoreapp2.2\TestCollection.IoC.deps.json
+D:\Estudos\Projetos\TestCollection\TestCollection.IoC\bin\Debug\netcoreapp2.2\TestCollection.IoC.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.IoC\obj\Debug\netcoreapp2.2\TestCollection.IoC.csproj.CoreCompileInputs.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.IoC\obj\Debug\netcoreapp2.2\TestCollection.IoC.AssemblyInfoInputs.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.IoC\obj\Debug\netcoreapp2.2\TestCollection.IoC.AssemblyInfo.cs
+D:\Estudos\Projetos\TestCollection\TestCollection.IoC\bin\Debug\netcoreapp2.2\TestCollection.IoC.pdb
+D:\Estudos\Projetos\TestCollection\TestCollection.IoC\obj\Debug\netcoreapp2.2\TestCollection.IoC.csprojAssemblyReference.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.IoC\obj\Debug\netcoreapp2.2\TestCollection.IoC.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.IoC\obj\Debug\netcoreapp2.2\TestCollection.IoC.pdb
