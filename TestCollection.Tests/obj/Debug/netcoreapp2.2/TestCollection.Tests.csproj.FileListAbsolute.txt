@@ -1,0 +1,17 @@
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\bin\Debug\netcoreapp2.2\TestCollection.Tests.deps.json
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\bin\Debug\netcoreapp2.2\TestCollection.Tests.runtimeconfig.json
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\bin\Debug\netcoreapp2.2\TestCollection.Tests.runtimeconfig.dev.json
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\bin\Debug\netcoreapp2.2\TestCollection.Tests.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\bin\Debug\netcoreapp2.2\TestCollection.Tests.pdb
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\bin\Debug\netcoreapp2.2\TestCollection.Util.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\bin\Debug\netcoreapp2.2\TestCollection.Util.pdb
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\obj\Debug\netcoreapp2.2\TestCollection.Tests.csprojAssemblyReference.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\obj\Debug\netcoreapp2.2\TestCollection.Tests.csproj.CoreCompileInputs.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\obj\Debug\netcoreapp2.2\TestCollection.Tests.AssemblyInfoInputs.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\obj\Debug\netcoreapp2.2\TestCollection.Tests.AssemblyInfo.cs
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\obj\Debug\netcoreapp2.2\TestCollection.Tests.csproj.CopyComplete
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\obj\Debug\netcoreapp2.2\TestCollection.Tests.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.Tests\obj\Debug\netcoreapp2.2\TestCollection.Tests.pdb

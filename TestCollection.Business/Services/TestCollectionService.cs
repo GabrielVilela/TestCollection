@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using TestCollection.Business.Services.Interfaces;
 using TestCollection.Util.Interfaces;
 
@@ -8,7 +6,7 @@ namespace TestCollection.Business.Services
 {
     public class TestCollectionService : ITestCollectionService
     {
-        public static ITestCollection testCollection = new TestCollection.Util.TestCollection();
+        public static ITestCollection testCollection = new Util.TestCollection();
         public bool Add(string key, int subIndex, string value)
         {
             return testCollection.Add(key, subIndex, value);

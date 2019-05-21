@@ -1619,6 +1619,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "TestCollection.Util/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/TestCollection.Util.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TestCollection.Util.dll": {}
+        }
       }
     }
   },
@@ -5810,6 +5820,11 @@
         "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "TestCollection.Util/1.0.0": {
+      "type": "project",
+      "path": "../TestCollection.Util/TestCollection.Util.csproj",
+      "msbuildProject": "../TestCollection.Util/TestCollection.Util.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5817,7 +5832,8 @@
       "MSTest.TestAdapter >= 1.4.0",
       "MSTest.TestFramework >= 1.4.0",
       "Microsoft.NET.Test.Sdk >= 16.0.1",
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "TestCollection.Util >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5849,7 +5865,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Util\\TestCollection.Util.csproj": {
+              "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Util\\TestCollection.Util.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
