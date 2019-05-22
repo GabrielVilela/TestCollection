@@ -1,0 +1,12 @@
+D:\Estudos\Projetos\TestCollection\TestCollection.Domain\bin\Debug\netcoreapp2.2\TestCollection.Domain.deps.json
+D:\Estudos\Projetos\TestCollection\TestCollection.Domain\bin\Debug\netcoreapp2.2\TestCollection.Domain.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.Domain\bin\Debug\netcoreapp2.2\TestCollection.Domain.pdb
+D:\Estudos\Projetos\TestCollection\TestCollection.Domain\obj\Debug\netcoreapp2.2\TestCollection.Domain.csproj.CoreCompileInputs.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.Domain\obj\Debug\netcoreapp2.2\TestCollection.Domain.AssemblyInfoInputs.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.Domain\obj\Debug\netcoreapp2.2\TestCollection.Domain.AssemblyInfo.cs
+D:\Estudos\Projetos\TestCollection\TestCollection.Domain\obj\Debug\netcoreapp2.2\TestCollection.Domain.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.Domain\obj\Debug\netcoreapp2.2\TestCollection.Domain.pdb
+D:\Estudos\Projetos\TestCollection\TestCollection.Domain\bin\Debug\netcoreapp2.2\TestCollection.Util.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.Domain\bin\Debug\netcoreapp2.2\TestCollection.Util.pdb
+D:\Estudos\Projetos\TestCollection\TestCollection.Domain\obj\Debug\netcoreapp2.2\TestCollection.Domain.csprojAssemblyReference.cache
+D:\Estudos\Projetos\TestCollection\TestCollection.Domain\obj\Debug\netcoreapp2.2\TestCollection.Domain.csproj.CopyComplete

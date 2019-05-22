@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using TestCollection.Business.Services.Interfaces;
+using TestCollection.Application.Services.Interfaces;
+using TestCollection.Application.ViewModels;
 
 namespace TestCollection.API.Controllers
 {
@@ -7,17 +8,17 @@ namespace TestCollection.API.Controllers
     [ApiController]
     public class TestCollectionController : ControllerBase
     {
-        public readonly ITestCollectionService _testCollectionService;
-        public TestCollectionController(ITestCollectionService testCollectionService)
+        public readonly ITestCollectionAppService _testCollectionAppService;
+        public TestCollectionController(ITestCollectionAppService testCollectionAppService)
         {
-            _testCollectionService = testCollectionService;
+            _testCollectionAppService = testCollectionAppService;
         }
         [HttpPost("add")]
-        public IActionResult Post(string key, int subIndex, string value)
+        public IActionResult Post([FromBody]TestItemViewModel item)
         {
             try
             {
-                return Ok(_testCollectionService.Add(key,subIndex, value));
+                return Ok(_testCollectionAppService.Add(item));
             }
             catch
             {
@@ -29,7 +30,7 @@ namespace TestCollection.API.Controllers
         {
             try
             {
-                return Ok(_testCollectionService.IndexOf(key, value));
+                return Ok(_testCollectionAppService.IndexOf(key, value));
             }
             catch
             {
@@ -41,7 +42,7 @@ namespace TestCollection.API.Controllers
         {
             try
             {
-                return Ok(_testCollectionService.Get(key, start, end));
+                return Ok(_testCollectionAppService.Get(key, start, end));
             }
             catch
             {
@@ -53,7 +54,7 @@ namespace TestCollection.API.Controllers
         {
             try
             {
-                return Ok(_testCollectionService.Remove(key));
+                return Ok(_testCollectionAppService.Remove(key));
             }
             catch
             {
@@ -65,7 +66,7 @@ namespace TestCollection.API.Controllers
         {
             try
             {
-                return Ok(_testCollectionService.RemoveValuesFromSubIndex(key, subIndex));
+                return Ok(_testCollectionAppService.RemoveValuesFromSubIndex(key, subIndex));
             }
             catch
             {

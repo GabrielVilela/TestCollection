@@ -1,15 +1,18 @@
-﻿using System.Collections.Generic;
-using TestCollection.Business.Services.Interfaces;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using TestCollection.Domain.Entities;
+using TestCollection.Domain.Interfaces;
 using TestCollection.Util.Interfaces;
 
-namespace TestCollection.Business.Services
+namespace TestCollection.Domain
 {
     public class TestCollectionService : ITestCollectionService
     {
         public static ITestCollection testCollection = new Util.TestCollection();
-        public bool Add(string key, int subIndex, string value)
+        public bool Add(TestItem item)
         {
-            return testCollection.Add(key, subIndex, value);
+            return testCollection.Add(item.Key, item.SubIndex, item.Value);
         }
         public long IndexOf(string key, string value)
         {

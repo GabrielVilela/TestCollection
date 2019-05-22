@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Business.csproj": {
-                "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Business.csproj"
+              "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Application.csproj": {
+                "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Application.csproj"
               },
               "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.IoC\\TestCollection.IoC.csproj": {
                 "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.IoC\\TestCollection.IoC.csproj"
@@ -48,6 +48,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -86,14 +90,77 @@
         }
       }
     },
-    "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Business.csproj": {
+    "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Business.csproj",
-        "projectName": "TestCollection.Business",
-        "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Business.csproj",
+        "projectUniqueName": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Application.csproj",
+        "projectName": "TestCollection.Application",
+        "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Application.csproj",
         "packagesPath": "C:\\Users\\gabriel.vilela\\.nuget\\packages\\",
         "outputPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gabriel.vilela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Domain\\TestCollection.Domain.csproj": {
+                "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Domain\\TestCollection.Domain.csproj"
+              },
+              "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Util\\TestCollection.Util.csproj": {
+                "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Util\\TestCollection.Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Domain\\TestCollection.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Domain\\TestCollection.Domain.csproj",
+        "projectName": "TestCollection.Domain",
+        "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Domain\\TestCollection.Domain.csproj",
+        "packagesPath": "C:\\Users\\gabriel.vilela\\.nuget\\packages\\",
+        "outputPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -168,8 +235,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Business.csproj": {
-                "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Business.csproj"
+              "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Application.csproj": {
+                "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Application.csproj"
+              },
+              "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Domain\\TestCollection.Domain.csproj": {
+                "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Domain\\TestCollection.Domain.csproj"
               }
             }
           }
@@ -183,6 +253,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
               "version": "[2.2.2, )"

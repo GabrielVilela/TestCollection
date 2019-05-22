@@ -5,11 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TestCollection.Business\TestCollection.Business.csproj" />
+    <ProjectReference Include="..\TestCollection.Business\TestCollection.Application.csproj" />
+    <ProjectReference Include="..\TestCollection.Domain\TestCollection.Domain.csproj" />
   </ItemGroup>
 
 </Project>

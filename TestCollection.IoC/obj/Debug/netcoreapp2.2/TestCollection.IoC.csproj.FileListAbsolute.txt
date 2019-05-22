@@ -7,8 +7,10 @@ D:\Estudos\Projetos\TestCollection\TestCollection.IoC\bin\Debug\netcoreapp2.2\Te
 D:\Estudos\Projetos\TestCollection\TestCollection.IoC\obj\Debug\netcoreapp2.2\TestCollection.IoC.csprojAssemblyReference.cache
 D:\Estudos\Projetos\TestCollection\TestCollection.IoC\obj\Debug\netcoreapp2.2\TestCollection.IoC.dll
 D:\Estudos\Projetos\TestCollection\TestCollection.IoC\obj\Debug\netcoreapp2.2\TestCollection.IoC.pdb
-D:\Estudos\Projetos\TestCollection\TestCollection.IoC\bin\Debug\netcoreapp2.2\TestCollection.Business.dll
 D:\Estudos\Projetos\TestCollection\TestCollection.IoC\bin\Debug\netcoreapp2.2\TestCollection.Util.dll
-D:\Estudos\Projetos\TestCollection\TestCollection.IoC\bin\Debug\netcoreapp2.2\TestCollection.Business.pdb
 D:\Estudos\Projetos\TestCollection\TestCollection.IoC\bin\Debug\netcoreapp2.2\TestCollection.Util.pdb
 D:\Estudos\Projetos\TestCollection\TestCollection.IoC\obj\Debug\netcoreapp2.2\TestCollection.IoC.csproj.CopyComplete
+D:\Estudos\Projetos\TestCollection\TestCollection.IoC\bin\Debug\netcoreapp2.2\TestCollection.Application.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.IoC\bin\Debug\netcoreapp2.2\TestCollection.Domain.dll
+D:\Estudos\Projetos\TestCollection\TestCollection.IoC\bin\Debug\netcoreapp2.2\TestCollection.Application.pdb
+D:\Estudos\Projetos\TestCollection\TestCollection.IoC\bin\Debug\netcoreapp2.2\TestCollection.Domain.pdb

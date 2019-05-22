@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "5d526e567d9390081fdbc1e961acd0ea9178b868"
+    "signature": "a9e3440816b48fb976065579c9cdef1339090823"
   },
   "compilationOptions": {
     "defines": [
@@ -24,13 +24,14 @@
     ".NETCoreApp,Version=v2.2": {
       "TestCollection.API/1.0.0": {
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.4.10",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3",
           "Swashbuckle.AspNetCore": "4.0.1",
-          "TestCollection.Business": "1.0.0",
+          "TestCollection.Application": "1.0.0",
           "TestCollection.IoC": "1.0.0"
         },
         "runtime": {
@@ -38,6 +39,36 @@
         },
         "compile": {
           "TestCollection.API.dll": {}
+        }
+      },
+      "AutoMapper/8.1.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.dll": {
+            "assemblyVersion": "8.1.0.0",
+            "fileVersion": "8.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.dll": {}
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.0": {
+        "dependencies": {
+          "AutoMapper": "8.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "6.1.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
       "Microsoft.AspNetCore.Http/2.2.2": {
@@ -430,21 +461,36 @@
           "System.Threading.Tasks": "4.3.0"
         }
       },
-      "TestCollection.Business/1.0.0": {
+      "TestCollection.Application/1.0.0": {
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.0",
+          "TestCollection.Domain": "1.0.0",
+          "TestCollection.Util": "1.0.0"
+        },
+        "runtime": {
+          "TestCollection.Application.dll": {}
+        },
+        "compile": {
+          "TestCollection.Application.dll": {}
+        }
+      },
+      "TestCollection.Domain/1.0.0": {
         "dependencies": {
           "TestCollection.Util": "1.0.0"
         },
         "runtime": {
-          "TestCollection.Business.dll": {}
+          "TestCollection.Domain.dll": {}
         },
         "compile": {
-          "TestCollection.Business.dll": {}
+          "TestCollection.Domain.dll": {}
         }
       },
       "TestCollection.IoC/1.0.0": {
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "6.1.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
-          "TestCollection.Business": "1.0.0"
+          "TestCollection.Application": "1.0.0",
+          "TestCollection.Domain": "1.0.0"
         },
         "runtime": {
           "TestCollection.IoC.dll": {}
@@ -3650,6 +3696,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "AutoMapper/8.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Go75WXHE7p/8CtRaxZnvVEfcSh7xpE6zx9wkgN4I1BxvlzP0hoiTLHSXDYXgv9CoxaRj4ahwzCA/iwdpvyQyOA==",
+      "path": "automapper/8.1.0",
+      "hashPath": "automapper.8.1.0.nupkg.sha512"
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/6.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vqbyqXknln1NFn80fbyJVPqJ3LMZhhhq8wMAl4BGTIH6GmK3gtGofuvo8bnWXXuD07y1lnMEuCmiNacvdtxPkw==",
+      "path": "automapper.extensions.microsoft.dependencyinjection/6.1.0",
+      "hashPath": "automapper.extensions.microsoft.dependencyinjection.6.1.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Http/2.2.2": {
       "type": "package",
       "serviceable": true,
@@ -3818,7 +3878,12 @@
       "path": "system.linq.parallel/4.3.0",
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
     },
-    "TestCollection.Business/1.0.0": {
+    "TestCollection.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TestCollection.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using TestCollection.Application.ViewModels;
 
-namespace TestCollection.Business.Services.Interfaces
+namespace TestCollection.Application.Services.Interfaces
 {
-    public interface ITestCollectionService
+    public interface ITestCollectionAppService
     {
-        bool Add(string key, int subIndex, string value);
+        bool Add(TestItemViewModel testItem);
         long IndexOf(string key, string value);
         IList<string> Get(string key, int start, int end);
         bool RemoveValuesFromSubIndex(string key, int subIndex);

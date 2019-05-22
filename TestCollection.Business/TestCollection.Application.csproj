@@ -5,10 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TestCollection.Domain\TestCollection.Domain.csproj" />
     <ProjectReference Include="..\TestCollection.Util\TestCollection.Util.csproj" />
   </ItemGroup>
 

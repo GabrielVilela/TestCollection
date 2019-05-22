@@ -5,6 +5,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using TestCollection.IoC;
 using Swashbuckle.AspNetCore.Swagger;
+using AutoMapper;
+using System.Reflection;
 
 namespace TestCollection.API
 {
@@ -21,6 +23,8 @@ namespace TestCollection.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddAutoMapper(Assembly.Load("TestCollection.Application"));
 
             services.AddSwaggerGen(options =>
             {
