@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  testcollection.webapi:
+    image: test.collection.webapi
+    build:
+      context: .
+      dockerfile: TestCollection.API/Dockerfile
+    ports:
+      - 9092:80
+
+networks:
+  default:
+    external:
+      name: TestCollection
+      
+      
+      
