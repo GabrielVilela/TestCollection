@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TestCollection.Application.ViewModels
+﻿namespace TestCollection.Application.ViewModels
 {
     public class TestItemViewModel
     {

@@ -4,14 +4,77 @@
     "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Tests\\TestCollection.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Tests\\TestCollection.Tests.csproj": {
+    "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Tests\\TestCollection.Tests.csproj",
-        "projectName": "TestCollection.Tests",
-        "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Tests\\TestCollection.Tests.csproj",
+        "projectUniqueName": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Application.csproj",
+        "projectName": "TestCollection.Application",
+        "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Application.csproj",
         "packagesPath": "C:\\Users\\gabriel.vilela\\.nuget\\packages\\",
-        "outputPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Tests\\obj\\",
+        "outputPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gabriel.vilela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Domain\\TestCollection.Domain.csproj": {
+                "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Domain\\TestCollection.Domain.csproj"
+              },
+              "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Util\\TestCollection.Util.csproj": {
+                "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Util\\TestCollection.Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Domain\\TestCollection.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Domain\\TestCollection.Domain.csproj",
+        "projectName": "TestCollection.Domain",
+        "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Domain\\TestCollection.Domain.csproj",
+        "packagesPath": "C:\\Users\\gabriel.vilela\\.nuget\\packages\\",
+        "outputPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -45,6 +108,65 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Tests\\TestCollection.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Tests\\TestCollection.Tests.csproj",
+        "projectName": "TestCollection.Tests",
+        "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Tests\\TestCollection.Tests.csproj",
+        "packagesPath": "C:\\Users\\gabriel.vilela\\.nuget\\packages\\",
+        "outputPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gabriel.vilela\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Application.csproj": {
+                "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Business\\TestCollection.Application.csproj"
+              },
+              "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Util\\TestCollection.Util.csproj": {
+                "projectPath": "D:\\Estudos\\Projetos\\TestCollection\\TestCollection.Util\\TestCollection.Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
             "MSTest.TestAdapter": {
               "target": "Package",
               "version": "[1.4.0, )"
@@ -62,6 +184,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.10.1, )"
             }
           },
           "imports": [

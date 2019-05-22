@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TestCollection.Domain.Entities
+﻿namespace TestCollection.Domain.Entities
 {
     public class TestItem
     {

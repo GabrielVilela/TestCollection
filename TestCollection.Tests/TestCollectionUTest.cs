@@ -1,6 +1,13 @@
+using AutoMapper;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 using System.Collections;
 using System.Collections.Generic;
+using TestCollection.Application.Services;
+using TestCollection.Application.Services.Interfaces;
+using TestCollection.Application.ViewModels;
+using TestCollection.Domain.Entities;
+using TestCollection.Domain.Interfaces;
 using TestCollection.Util.Interfaces;
 
 namespace TestCollection.Tests
@@ -79,6 +86,28 @@ namespace TestCollection.Tests
             CollectionAssert.AreEqual(list, (List<string>)testColl.Get("ano.nascimento", 1, 3));
             list.Remove("caio");
             CollectionAssert.AreEqual(list, (List<string>)testColl.Get("ano.nascimento", 1, 2));
+        }
+        //teste com mock;
+        [TestMethod]
+        public void AddMock()
+        {
+            var testMock = new Mock<ITestCollectionService>();
+           
+            var mapper = new Mock<IMapper>();
+            TestItem amanda = new TestItem() { Key = "ano.nascimento", SubIndex =1983, Value="amanda"};
+            TestItemViewModel amandaViewModel = new TestItemViewModel() { Key = "ano.nascimento", SubIndex = 1983, Value = "amanda" };
+            TestItem caio = new TestItem() { Key = "ano.nascimento", SubIndex = 1983, Value = "caio" };
+            TestItemViewModel caioViewModel = new TestItemViewModel() { Key = "ano.nascimento", SubIndex = 1983, Value = "caio" };
+
+            testMock.Setup(x => x.Add(amanda)).Returns(true);
+            testMock.Setup(x => x.Add(caio)).Returns(false);
+
+            mapper.Setup(x => x.Map<TestItem>(amandaViewModel)).Returns(amanda);
+            mapper.Setup(x => x.Map<TestItem>(caioViewModel)).Returns(caio);
+
+            ITestCollectionAppService testCollectionAppService = new TestCollectionAppService(testMock.Object, mapper.Object);
+            Assert.IsTrue(testCollectionAppService.Add(amandaViewModel));
+            Assert.IsFalse(testCollectionAppService.Add(caioViewModel));
         }
     }
 }

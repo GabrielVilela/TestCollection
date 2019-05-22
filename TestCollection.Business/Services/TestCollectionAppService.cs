@@ -4,7 +4,6 @@ using TestCollection.Application.Services.Interfaces;
 using TestCollection.Application.ViewModels;
 using TestCollection.Domain.Entities;
 using TestCollection.Domain.Interfaces;
-using TestCollection.Util.Interfaces;
 
 namespace TestCollection.Application.Services
 {
