@@ -1,0 +1,450 @@
+{
+	"info": {
+		"_postman_id": "acc0d401-bfaf-4efc-ae6f-0a9c82237e7e",
+		"name": "TestCollectionIIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:51839/api/TestCollection/add",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"key\": \"cidade.sp\",\r\n  \"subIndex\": 2000,\r\n  \"value\": \"sao paulo\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:51839/api/TestCollection/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51839",
+					"path": [
+						"api",
+						"TestCollection",
+						"add"
+					]
+				},
+				"description": "Add cidade.sp, 2000, sao paulo"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51839/api/TestCollection/add",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"key\": \"cidade.sp\",\r\n  \"subIndex\": 2000,\r\n  \"value\": \"franca\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:51839/api/TestCollection/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51839",
+					"path": [
+						"api",
+						"TestCollection",
+						"add"
+					]
+				},
+				"description": "Add cidade.sp, 2000, franca"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51839/api/TestCollection/add",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"key\": \"ano.nascimento\",\r\n  \"subIndex\": 1982,\r\n  \"value\": \"amanda\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:51839/api/TestCollection/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51839",
+					"path": [
+						"api",
+						"TestCollection",
+						"add"
+					]
+				},
+				"description": "add ano.nascimento,1982, amanda"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51839/api/TestCollection/add",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"key\": \"ano.nascimento\",\r\n  \"subIndex\": 1982,\r\n  \"value\": \"joao\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:51839/api/TestCollection/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51839",
+					"path": [
+						"api",
+						"TestCollection",
+						"add"
+					]
+				},
+				"description": "add ano.nascimento, 1982, joao"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51839/api/TestCollection/add",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"key\": \"ano.nascimento\",\r\n  \"subIndex\": 1982,\r\n  \"value\": \"pedro\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:51839/api/TestCollection/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51839",
+					"path": [
+						"api",
+						"TestCollection",
+						"add"
+					]
+				},
+				"description": "add ano.nascimento, 1982, pedro"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51839/api/TestCollection/add",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"key\": \"ano.nascimento\",\r\n  \"subIndex\": 1983,\r\n  \"value\": \"bruna\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:51839/api/TestCollection/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51839",
+					"path": [
+						"api",
+						"TestCollection",
+						"add"
+					]
+				},
+				"description": "add ano.nascimento, 1983, bruna"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51839/api/TestCollection/add",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"key\": \"ano.nascimento\",\r\n  \"subIndex\": 1983,\r\n  \"value\": \"maria\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:51839/api/TestCollection/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51839",
+					"path": [
+						"api",
+						"TestCollection",
+						"add"
+					]
+				},
+				"description": "add ano.nascimento, 1983, maria"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51839/api/TestCollection/get?key=cidade.sp&start=0&end=1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:51839/api/TestCollection/get?key=cidade.sp&start=0&end=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51839",
+					"path": [
+						"api",
+						"TestCollection",
+						"get"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "cidade.sp"
+						},
+						{
+							"key": "start",
+							"value": "0"
+						},
+						{
+							"key": "end",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Get, cidade.sp, 0, 1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51839/api/TestCollection/indexOf?key=cidade.sp&value=sao paulo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:51839/api/TestCollection/indexOf?key=cidade.sp&value=sao paulo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51839",
+					"path": [
+						"api",
+						"TestCollection",
+						"indexOf"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "cidade.sp"
+						},
+						{
+							"key": "value",
+							"value": "sao paulo"
+						}
+					]
+				},
+				"description": "Index of, cidade.sp , sao paulo"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51839/api/TestCollection/indexOf?key=ano.nascimento&value=maria",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:51839/api/TestCollection/indexOf?key=ano.nascimento&value=maria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51839",
+					"path": [
+						"api",
+						"TestCollection",
+						"indexOf"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "ano.nascimento"
+						},
+						{
+							"key": "value",
+							"value": "maria"
+						}
+					]
+				},
+				"description": "index of, ano.nascimento, maria"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51839/api/TestCollection/removeValuesFromSubIndex?key=ano.nascimento&subIndex=1982",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:51839/api/TestCollection/removeValuesFromSubIndex?key=ano.nascimento&subIndex=1982",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51839",
+					"path": [
+						"api",
+						"TestCollection",
+						"removeValuesFromSubIndex"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "ano.nascimento"
+						},
+						{
+							"key": "subIndex",
+							"value": "1982"
+						}
+					]
+				},
+				"description": "remove subindex, ano.nascimento, 1982"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51839/api/TestCollection/remove?key=cidade.sp",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:51839/api/TestCollection/remove?key=cidade.sp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51839",
+					"path": [
+						"api",
+						"TestCollection",
+						"remove"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "cidade.sp"
+						}
+					]
+				},
+				"description": "Remove, cidade.sp"
+			},
+			"response": []
+		}
+	]
+}
