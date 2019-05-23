@@ -113,7 +113,7 @@ namespace TestCollection.Util
                         if (list.Count >= indexStart && list.Count >= indexEnd)
                         {
                             returnList.AddRange(list.GetRange(indexStart, indexEnd - indexStart));
-                            return returnList.OrderBy(x => x).ToList();
+                            return returnList.OrderBy(x => x).Distinct().ToList();
                         }
                         else
                         {
@@ -146,7 +146,7 @@ namespace TestCollection.Util
                     returnList.RemoveRange(returnList.Count - endAux, endAux);
                 }
             }
-            return returnList.OrderBy(x => x).ToList();
+            return returnList.OrderBy(x => x).Distinct().ToList();
 
         }
         public long IndexOf(string key, string value)
