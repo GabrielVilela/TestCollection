@@ -96,6 +96,8 @@ namespace TestCollection.Tests
             list.Remove("caio");
             CollectionAssert.AreEqual(list.OrderBy(x => x).Distinct().ToList(), (List<string>)testColl.Get("ano.nascimento", 1, 2));
             CollectionAssert.AreEqual(list.OrderBy(x => x).Distinct().ToList(), (List<string>)testColl.Get("ano.nascimento", 1, -2));
+            list.Add("caio");
+            CollectionAssert.AreEqual(list.OrderBy(x => x).Distinct().ToList(), (List<string>)testColl.Get("ano.nascimento", 1, -1));
         }
         //teste com mock;
         [TestMethod]
