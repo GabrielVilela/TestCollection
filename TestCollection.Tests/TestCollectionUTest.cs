@@ -79,19 +79,23 @@ namespace TestCollection.Tests
             List<string> list = new List<string>();
 
             list.Add("ciro");
+            list.Add("ciro");
             list.Add("adam");
             list.Add("amanda");
             list.Add("caio");
             testColl.Add("ano.nascimento", 1983, "amanda");
             testColl.Add("ano.nascimento", 1982, "ciro");
+            testColl.Add("ano.nascimento", 1982, "ciro");
             testColl.Add("ano.nascimento", 1984, "caio");
             testColl.Add("ano.nascimento", 1983, "adam");
-            CollectionAssert.AreEqual(list.OrderBy(x=>x).ToList(),(List<string>)testColl.Get("ano.nascimento", 0, 3));
-            CollectionAssert.AreEqual(list.OrderBy(x => x).ToList(), (List<string>)testColl.Get("ano.nascimento", 0, 4));
+            CollectionAssert.AreEqual(list.OrderBy(x=>x).Distinct().ToList(),(List<string>)testColl.Get("ano.nascimento", 0, 3));
+            CollectionAssert.AreEqual(list.OrderBy(x => x).Distinct().ToList(), (List<string>)testColl.Get("ano.nascimento", 0, 4));
             list.Remove("ciro");
-            CollectionAssert.AreEqual(list.OrderBy(x => x).ToList(), (List<string>)testColl.Get("ano.nascimento", 1, 3));
+            list.Remove("ciro");
+            CollectionAssert.AreEqual(list.OrderBy(x => x).Distinct().ToList(), (List<string>)testColl.Get("ano.nascimento", 1, 3));
             list.Remove("caio");
-            CollectionAssert.AreEqual(list.OrderBy(x => x).ToList(), (List<string>)testColl.Get("ano.nascimento", 1, 2));
+            CollectionAssert.AreEqual(list.OrderBy(x => x).Distinct().ToList(), (List<string>)testColl.Get("ano.nascimento", 1, 2));
+            CollectionAssert.AreEqual(list.OrderBy(x => x).Distinct().ToList(), (List<string>)testColl.Get("ano.nascimento", 1, -2));
         }
         //teste com mock;
         [TestMethod]
