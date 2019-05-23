@@ -26,7 +26,8 @@ namespace TestCollection.Util
                     else
                     {
                         this.TestColl[key][subIndex].Add(value);
-                        return true;
+                        this.TestColl[key][subIndex] = this.TestColl[key][subIndex].OrderBy(x => x).ToList();
+                        
                     }
                 }
                 else
@@ -34,8 +35,24 @@ namespace TestCollection.Util
                     List<string> list = new List<string>();
                     list.Add(value);
                     this.TestColl[key].Add(subIndex, list);
-                    return true;
+                    var dic = this.TestColl[key].OrderBy(x => x.Key);
+                    this.TestColl[key] = dic.ToDictionary((keyItem) => keyItem.Key, (valueItem) => valueItem.Value);
                 }
+                bool removed = false;
+                foreach (var l in this.TestColl[key])
+                {
+                    if(l.Key != subIndex)
+                    {
+                        if (l.Value.Contains(value))
+                        {
+                            l.Value.Remove(value);
+                            removed = true;
+                        }
+                    }
+                }
+                if (removed)
+                    return false;
+                return true;
             }
             else
             {
@@ -44,6 +61,8 @@ namespace TestCollection.Util
                 Dictionary<int, List<string>> dict = new Dictionary<int, List<string>>();
                 dict.Add(subIndex, list);
                 this.TestColl.Add(key, dict);
+                var dic = this.TestColl.OrderBy(x => x.Key);
+                this.TestColl = dic.ToDictionary((keyItem) => keyItem.Key, (valueItem) => valueItem.Value);
                 return true;
             }
         }
@@ -85,22 +104,20 @@ namespace TestCollection.Util
                 if (start < 0)
                 {
                     indexStart = 0;
-                    indexEnd = end + 1 + (start * -1);
                 }
                 if (this.TestColl.ContainsKey(key))
                 {
-                    var dictList = this.TestColl[key].OrderBy(x => x.Key).ToDictionary(d => d.Key, d => (IList<string>)d.Value.OrderBy(v => v).ToList()).Values;
+                    var dictList = this.TestColl[key].Values;
                     foreach (var list in dictList)
                     {
-                        var lst = list.ToList();
-                        if (lst.Count >= indexStart && lst.Count >= indexEnd)
+                        if (list.Count >= indexStart && list.Count >= indexEnd)
                         {
-                            returnList.AddRange(lst.GetRange(indexStart, indexEnd - indexStart));
-                            return returnList;
+                            returnList.AddRange(list.GetRange(indexStart, indexEnd - indexStart));
+                            return returnList.OrderBy(x => x).ToList();
                         }
                         else
                         {
-                            returnList.AddRange(lst.GetRange(indexStart, lst.Count - indexStart));
+                            returnList.AddRange(list.GetRange(indexStart, list.Count - indexStart));
                         }
                         indexEnd = (end - start + 1) - returnList.Count;
                         indexStart = 0;
@@ -110,23 +127,26 @@ namespace TestCollection.Util
             }
             if (end < 0)
             {
+                if (start < 0)
+                {
+                    indexStart = 0;
+                }
                 var endAux = (end + 1) * (-1);
                 if (this.TestColl.ContainsKey(key))
                 {
-                    var dictList = this.TestColl[key].OrderByDescending(x => x.Key).ToDictionary(d => d.Key, d => (IList<string>)d.Value.OrderByDescending(v => v).ToList()).Values;
+                    var dictList = this.TestColl[key].OrderByDescending(x => x.Key).ToDictionary(d => d.Key, d => (List<string>)d.Value.OrderByDescending(v => v).ToList()).Values;
                     foreach (var list in dictList)
                     {
-                        var lst = list.ToList();
-                        if (endAux < lst.Count)
+                        if (list.Count >= endAux)
                         {
-                            returnList.Add(lst[endAux]);
-                            return returnList;
+                            returnList.AddRange(list.GetRange(endAux, list.Count - endAux));
                         }
-                        endAux -= lst.Count;
+                        endAux = endAux - list.Count() <= 0 ? 0 : endAux - list.Count();
                     }
+                    returnList.RemoveRange(returnList.Count - indexStart, indexStart);
                 }
             }
-            return returnList;
+            return returnList.OrderBy(x => x).ToList();
 
         }
         public long IndexOf(string key, string value)
