@@ -6,4 +6,3 @@ D:\Estudos\Projetos\TestCollection\TestCollection.Util\obj\Debug\netcoreapp2.2\T
 D:\Estudos\Projetos\TestCollection\TestCollection.Util\obj\Debug\netcoreapp2.2\TestCollection.Util.AssemblyInfo.cs
 D:\Estudos\Projetos\TestCollection\TestCollection.Util\obj\Debug\netcoreapp2.2\TestCollection.Util.dll
 D:\Estudos\Projetos\TestCollection\TestCollection.Util\obj\Debug\netcoreapp2.2\TestCollection.Util.pdb
-D:\Estudos\Projetos\TestCollection\TestCollection.Util\obj\Debug\netcoreapp2.2\TestCollection.Util.csprojAssemblyReference.cache

@@ -17,7 +17,14 @@ namespace TestCollection.Domain
         }
         public bool Add(TestItem item)
         {
-            return testCollection.Add(item.Key, item.SubIndex, item.Value);
+            try
+            {
+                return testCollection.Add(item.Key, item.SubIndex, item.Value);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         public long IndexOf(string key, string value)
         {
@@ -68,11 +75,25 @@ namespace TestCollection.Domain
         }
         public bool RemoveValuesFromSubIndex(string key, int subIndex)
         {
-            return testCollection.RemoveValuesFromSubIndex(key, subIndex);
+                try
+                {
+                    return testCollection.RemoveValuesFromSubIndex(key, subIndex);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         public bool Remove(string key)
         {
-            return testCollection.Remove(key);
+            try
+            {
+                return testCollection.Remove(key);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

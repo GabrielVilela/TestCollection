@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using TestCollection.Application.Services.Interfaces;
 using TestCollection.Application.ViewModels;
 
@@ -20,9 +21,9 @@ namespace TestCollection.API.Controllers
             {
                 return Ok(_testCollectionAppService.Add(item));
             }
-            catch
+            catch(Exception ex)
             {
-                return Forbid();
+                return StatusCode(500, ex.Message);
             }
         }
         [HttpGet("indexOf")]
@@ -33,9 +34,9 @@ namespace TestCollection.API.Controllers
             {
                 return Ok(_testCollectionAppService.IndexOf(key, value));
             }
-            catch
+            catch(Exception ex)
             {
-                return Forbid();
+                return StatusCode(500, ex.Message);
             }
         }
         [HttpGet("get")]
@@ -46,9 +47,9 @@ namespace TestCollection.API.Controllers
             {
                 return Ok(_testCollectionAppService.Get(key, start, end));
             }
-            catch
+            catch(Exception ex)
             {
-                return Forbid();
+                return StatusCode(500, ex.Message);
             }
         }
         [HttpDelete("remove")]
@@ -58,9 +59,9 @@ namespace TestCollection.API.Controllers
             {
                 return Ok(_testCollectionAppService.Remove(key));
             }
-            catch
+            catch(Exception ex)
             {
-                return Forbid();
+                return StatusCode(500, ex.Message);
             }
         }
         [HttpDelete("removeValuesFromSubIndex")]
@@ -70,9 +71,9 @@ namespace TestCollection.API.Controllers
             {
                 return Ok(_testCollectionAppService.RemoveValuesFromSubIndex(key, subIndex));
             }
-            catch
+            catch(Exception ex)
             {
-                return Forbid();
+                return StatusCode(500, ex.Message);
             }
         }
     }
