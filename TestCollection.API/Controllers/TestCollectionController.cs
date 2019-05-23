@@ -26,6 +26,7 @@ namespace TestCollection.API.Controllers
             }
         }
         [HttpGet("indexOf")]
+        [ResponseCache(Location = ResponseCacheLocation.Client, Duration = 30)]
         public IActionResult IndexOf(string key, string value)
         {
             try
@@ -38,6 +39,7 @@ namespace TestCollection.API.Controllers
             }
         }
         [HttpGet("get")]
+        [ResponseCache(Location = ResponseCacheLocation.Client, Duration = 30)]
         public IActionResult Get(string key, int start, int end)
         {
             try
