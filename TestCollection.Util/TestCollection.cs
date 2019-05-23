@@ -134,16 +134,16 @@ namespace TestCollection.Util
                 var endAux = (end + 1) * (-1);
                 if (this.TestColl.ContainsKey(key))
                 {
-                    var dictList = this.TestColl[key].OrderByDescending(x => x.Key).ToDictionary(d => d.Key, d => (List<string>)d.Value.OrderByDescending(v => v).ToList()).Values;
+                    var dictList = this.TestColl[key].Values;
                     foreach (var list in dictList)
                     {
-                        if (list.Count >= endAux)
+                        if (list.Count > indexStart)
                         {
-                            returnList.AddRange(list.GetRange(endAux, list.Count - endAux));
+                            returnList.AddRange(list.GetRange(indexStart, list.Count - indexStart));
                         }
-                        endAux = endAux - list.Count() <= 0 ? 0 : endAux - list.Count();
+                        indexStart = indexStart - list.Count() <= 0 ? 0 : indexStart - list.Count();
                     }
-                    returnList.RemoveRange(returnList.Count - indexStart, indexStart);
+                    returnList.RemoveRange(returnList.Count - endAux, endAux);
                 }
             }
             return returnList.OrderBy(x => x).ToList();
