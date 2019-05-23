@@ -11,3 +11,6 @@ Foi criado uma web.api para adicionar itens em uma coleção de dados chamada Te
 # Para rodar normalmente no IIS:
 1- Acessar a Solution do projeto;
 2- Alterar o "Run" do VS de Docker para IIS Express
+
+# Collection Postman
+Foi criada duas collections do postman, uma para funcionar com o Docker na porta 9092, e outra quando rodada no IIS, com a porta 51839.
