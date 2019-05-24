@@ -103,6 +103,8 @@ namespace TestCollection.Tests
             CollectionAssert.AreEqual(list.OrderBy(x => x).Distinct().ToList(), (List<string>)testColl.Get("ano.nascimento", 1, -1));
             list.Add("ciro");
             CollectionAssert.AreEqual(list.OrderBy(x => x).Distinct().ToList(), (List<string>)testColl.Get("ano.nascimento", 0, -1));
+            list.Remove("caio");
+            CollectionAssert.AreEqual(list.OrderBy(x => x).Distinct().ToList(), (List<string>)testColl.Get("ano.nascimento", 0, -2));
         }
         //teste com mock;
         [TestMethod]
