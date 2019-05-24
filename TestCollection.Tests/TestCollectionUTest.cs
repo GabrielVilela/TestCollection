@@ -28,7 +28,7 @@ namespace TestCollection.Tests
             var test4 = testColl.Add("ano.nascimento", 1984, "amanda");
             Assert.IsFalse(test4);
             var test5 = testColl.Add("ano.nascimento", 1990, "caio");
-            Assert.IsFalse(test4);
+            Assert.IsFalse(test5);
 
         }
         [TestMethod]
@@ -45,6 +45,9 @@ namespace TestCollection.Tests
             Assert.AreEqual(1, testColl.IndexOf("ano.nascimento", "adam"));
             testColl.Add("ano.nascimento", 1987, "amanda");
             Assert.AreEqual(3, testColl.IndexOf("ano.nascimento", "amanda"));
+            testColl.Add("ano.nascimento", 1980, "amanda");
+            Assert.AreEqual(0, testColl.IndexOf("ano.nascimento", "amanda"));
+            Assert.AreEqual(1, testColl.IndexOf("ano.nascimento", "ciro"));
         }
         [TestMethod]
         public void Remove()
@@ -98,6 +101,8 @@ namespace TestCollection.Tests
             CollectionAssert.AreEqual(list.OrderBy(x => x).Distinct().ToList(), (List<string>)testColl.Get("ano.nascimento", 1, -2));
             list.Add("caio");
             CollectionAssert.AreEqual(list.OrderBy(x => x).Distinct().ToList(), (List<string>)testColl.Get("ano.nascimento", 1, -1));
+            list.Add("ciro");
+            CollectionAssert.AreEqual(list.OrderBy(x => x).Distinct().ToList(), (List<string>)testColl.Get("ano.nascimento", 0, -1));
         }
         //teste com mock;
         [TestMethod]
